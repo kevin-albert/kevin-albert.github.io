@@ -11,7 +11,7 @@ Using the JSON-processing language [jq](https://stedolan.github.io/jq/ "jq"), I 
 Because data in jq is immutable, the state of the network (weights, biases, activations, etc) is accumulated through a tail-recursive reduction across the input dataset. The entire neural network library is only 160 lines long (including a decent amount of comments). Running on a t2.micro, the computation (one pass over the test dataset and one over the training dataset) took about a week.  
 
 Reference info about the network itself:
-* **Layers**: 784 (input) -> 100 (sigmoid) -> 10 (sigmoid)
+* **Layers**: 784 (input) -> 100 (logistic sigmoid) -> 10 (logistic sigmoid)
 * **Cost function**: Cross-entropy
 * **Training method**: Plain old SGD
 * **Learning Rate**: 0.1

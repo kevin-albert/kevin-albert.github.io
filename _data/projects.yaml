@@ -1,0 +1,25 @@
+- title: Classic Times, Crazy Days
+  url: https://supple-congress.github.io/ctcd
+  image: /images/ctcd.png
+  completed: true
+
+- title: JQ Neural Network Library
+  url: https://github.com/kevin-albert/jq-neural-network
+  image: /images/quadcopter.jpg
+  completed: true
+
+- title: Awkserver
+  url: https://github.com/kevin-albert/awkserver
+  image: http://lorempixel.com/900/900/transport/6/
+  completed: true
+
+- title: LSTM in C++ / Eigen
+  url: https://github.com/kevin-albert/lstm-cpp
+  image: http://lorempixel.com/900/900/cats/6/
+  completed: true
+
+- title: Synflood
+  url: https://github.com/kevin-albert/synflood
+  image: https://lorempixel.com/900/900/cats/3/
+  completed: true
+
