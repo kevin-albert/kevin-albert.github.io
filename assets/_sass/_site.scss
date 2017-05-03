@@ -17,7 +17,7 @@
   height: 100%;
   position: relative;
   display: table;
-  > div {
+  >div {
     display: table-cell;
     vertical-align: middle;
   }
@@ -173,7 +173,7 @@ canvas {
 .projects-menu {
   font-size: 0;
   height: 100%;
-  > li {
+  >li {
     display: inline-block;
     width: calc(100%/3);
     background: $overlay-color;
@@ -292,6 +292,10 @@ canvas {
   font: 0/0 verdana;
   color: transparent;
   text-shadow: none;
+}
+
+.logo img {
+  border-radius: 50%;
 }
 
 .main-info,
@@ -479,7 +483,7 @@ canvas {
 
 .posts-list {
   margin: 50px 0;
-  > li {
+  >li {
     margin-bottom: 23px;
     padding-bottom: 20px;
     border-bottom: 1px solid darken($white, 8.2353);
@@ -510,21 +514,21 @@ canvas {
       }
     }
   }
-  .tags li > a {
+  .tags li>a {
     color: lighten($black, 28%);
   }
 }
 
 .tags {
   margin-top: 20px;
-  > li {
+  >li {
     display: inline-block;
     background: darken($white, 5%);
     padding: 7px 10px;
     color: lighten($black, 28%);
     font-size: 11px;
     text-transform: uppercase;
-    > a {
+    >a {
       color: $white;
     }
   }
@@ -570,7 +574,7 @@ canvas {
   ul,
   ol {
     padding-left: 30px;
-    > li {
+    >li {
       position: relative;
       margin-bottom: 20px;
       &:first-child {
@@ -595,7 +599,7 @@ canvas {
     bottom: auto;
     font-size: 80px;
   }
-  .tags > li {
+  .tags>li {
     background: none;
     border: 1px solid rgba($white, 0.4);
     color: $white;
@@ -696,7 +700,7 @@ canvas {
   position: absolute;
   top: 32px;
   left: 40px;
-  > .btn {
+  >.btn {
     margin-bottom: 0;
   }
 }
@@ -733,7 +737,7 @@ canvas {
 @media screen and (max-width: 640px) {
   .posts-list {
     margin-top: 80px;
-    > li {
+    >li {
       .post-title {
         max-width: 100%;
       }
@@ -758,7 +762,7 @@ canvas {
       font-size: 16px;
       line-height: 24px;
     }
-    ul > li {
+    ul>li {
       margin-bottom: 10px;
     }
   }
@@ -823,9 +827,11 @@ canvas {
     }
   }
 }
-.entry-title > a{
+
+.entry-title>a {
   border: none !important;
 }
+
 .pagination {
   display: flex;
   flex-direction: row;
@@ -861,10 +867,10 @@ canvas {
     }
     &.disabled {
       background-color: darken($white, 3%);
-      color:darken($white, 15%) !important;
+      color: darken($white, 15%) !important;
       &:hover {
         background-color: darken($white, 3%);
-        color:darken($white, 15%) !important;
+        color: darken($white, 15%) !important;
       }
     }
   }

@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Machine Learning With Jq"
-date:       2016-12-07 12:49
+date:       2016-12-08 12:49:00
 summary:    "A basic neural network library written in jq"
 categories: things stuff
 ---
