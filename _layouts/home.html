@@ -24,12 +24,14 @@ layout: compress
   </div>
 
   <div class="block-right">
-    <a href="{{ site.url }}/posts" title="posts" class="posts-menu-icon"></a>
-    <span class="posts-link">POSTS</span>
+    <!-- XXX remove the right: 30px when resurrecting projects -->
+    <a href="{{ site.url }}/posts" title="posts" style="right: 30px" class="posts-menu-icon"></a>
+    <span style="right: 30px" class="posts-link">POSTS</span>
+    <!--
     <a title="project" class="projects-menu-icon">
       <span></span>
     </a>
-    <span class="projects-link">PROJECTS</span>
+    XXX no projects for now <span class="projects-link">PROJECTS</span>-->
     <div class="content">
       <div class="about-info">
         {{ content }}

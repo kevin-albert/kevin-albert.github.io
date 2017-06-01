@@ -47,7 +47,6 @@ canvas {
 }
 
 .projects-menu-icon {
-  display: none; /* for now */
   position: absolute;
   top: 30px;
   right: 30px;
@@ -137,6 +136,21 @@ canvas {
     &:after {
       border-color: $green;
     }
+  }
+}
+
+.home-menu-icon {
+  position: absolute;
+  top: 30px;
+  right: 90px;
+}
+
+.home-menu-icon path {
+  stroke: $gray;
+  stroke-width: 2px;
+  fill: rgba(255,255,255,0);
+  &:hover {
+    stroke: $green;
   }
 }
 

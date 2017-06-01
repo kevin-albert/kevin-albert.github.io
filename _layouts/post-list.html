@@ -16,10 +16,17 @@ layout: compress
     </div>
 
     <div class="block-right">
-      <a href="posts.html" title="posts" class="posts-menu-icon"></a>
+      <a href="/" title="home" class="home-menu-icon">
+        <svg width="24" height="33" viewBox="0 0 24 33">
+          <path d="M 1 1 L 17 1 L 23 7 L 23 32 L 1 32 z M 5 11 L 19 11  M 5 17 L 19 17  M 5 23 L 19 23" />
+        </svg>
+      </a>
+      <a href="posts.html" style="right: 30px" title="posts" class="posts-menu-icon"></a>
+      <!-- XXX projects
       <a title="projects" class="projects-menu-icon">
         <span></span>
       </a>
+      -->
       <div class="content">
         <ul class="posts-list">
         {% for post in site.posts %}
