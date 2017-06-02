@@ -6,13 +6,13 @@ summary:    "Introduction to CUDA using parallel mergesort, including code sampl
 categories: things stuff
 ---
 
-I’ve been messing with [CUDA](http://www.nvidia.com/object/cuda_home_new.html "CUDA") recently. If you don’t know, CUDA is a programming model / SDK designed for using your NVIDIA graphics card for parallel computation.
+I’ve been messing with [CUDA](http://www.nvidia.com/object/cuda_home_new.html "CUDA") recently. If you don’t know, CUDA is the programming toolchain designed for using NVIDIA graphics cards for parallel computation. You write host and device code in C++, and use provided functions for moving memory around and invoking GPU kernels.  
 
-To get started, I first downloaded their SDK and compiled some of their samples. Then wrote some completely arbitrary programs and got them to compile. Next, I decided to try and use CUDA to speed up an actual algorithm, so I chose sorting.
+To get started, I first downloaded their SDK and compiled some of their samples. Then wrote some completely trivial programs and got them to compile. Next, I decided to try and use CUDA to speed up an actual algorithm, so I chose sorting.
 
 ## Algorithm
 
-I chose to try and parallelize a simple bottom-up mergesort. The implementation is quite simple:
+I chose to try and parallelize a simple bottom-up mergesort. The implementation is simple:
 
 1. Start with two lists: Your input array, and a temp array that’s the same size.
 2. Define a width, starting at 2. During each step, width gets multiplied by 2.
@@ -120,7 +120,7 @@ $ sort -n out.txt
 $ ./mergesort -v out.txt
 ```
 
-While I didn’t really expect to beat the system sort, I was curious to see how long the actual sort took (after IO / memory allocation):
+While I didn’t really expect to beat the system sort, I was curious to see how long the algorithm ran:
 
 | Event                         | Running Time      |
 |:------------------------------|:------------------|
@@ -154,7 +154,8 @@ While I didn’t really expect to beat the system sort, I was curious to see how
 | cudaFree                      | 6.834 milliseconds|
 | print to stdout               | 320 milliseconds  |
 
-119 microseconds - not too bad. An appropriate follow-up would compare with a similar CPU implementation.
+119 microseconds spent sorting - not too bad. An appropriate follow-up would compare with a similar CPU implementation.  
 
 ## Notes
-* Don’t use too many threads or your screen will freeze indefinitely
+* Don’t use too many threads or your screen will freeze 
+
