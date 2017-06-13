@@ -10,7 +10,7 @@ A technical overview of my Donald Trump Twitter simulator, which can be found at
 
 ## Introduction
 
-An ongoing topic of attention in news and politics, Donald Trump's twitter account is also an ever-growing source of data for natural language analysis. By applying a widely-used character-level deep RNN model ([Generating Sequences With Recurrent Neural Networks. Graves, 2014](https://arxiv.org/pdf/1308.0850.pdf), [The Unreasonable Effectiveness of Recurrent Neural Networks. Karpathy, 2015](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)), we are able to build a simple and strikingly realistic Donald Trump simulation.
+An ongoing topic of attention in news and politics, Donald Trump's twitter account is also an ever-growing source of data for natural language analysis. By applying a widely-used character-level deep RNN model ([Graves, 2014](https://arxiv.org/pdf/1308.0850.pdf), [Karpathy, 2015](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)), we are able to build a simple and strikingly realistic Donald Trump simulation.
 
 ## Training Data
 
